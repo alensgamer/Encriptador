@@ -14,9 +14,15 @@ function cons(si){
 function escribir2() {
     //valores Iniciales
     var valor = document.getElementById('entrada').value;
-    document.getElementById('Replica').innerHTML=' '+valor
+     /* document.getElementById('Replica').innerHTML=' '+valor */
     
-    //Mis valores
+    window.addEventListener("keypress",function(cachonda){
+        cons(cachonda.key)
+            mames = cachonda.key.value
+            cons(mames)
+    })
+
+    
 } 
 /* var button = document.querySelector("button")
 button.onclick = vamo;
@@ -70,6 +76,24 @@ uwu[cami].onclick = function(){
     cons(document.getElementById("entrada").outerHTML)
     document.getElementById("entrada").outerHTML = "     <textarea name='uwu' id='entrada' placeholder='Texto a Encriptar/Desencriptar' onkeyup='escribir2()'></textarea>"
 }
+
+
+//Boton para modo de encriptacion
+var carn=1;
+cons(uwu[carn].style)
+uwu[carn].onmouseover=function(){
+    cons("paso")
+    uwu[carn].style.width = "75%";
+    uwu[carn].style.fontSize = "0.9vw";
+    uwu[carn].textContent = "Cambiar modo";
+} 
+uwu[carn].onmouseleave=function(){
+    cons("paso")
+    uwu[carn].style.width = "auto";
+    uwu[carn].style.fontSize = "1.4vw";
+    uwu[carn].textContent = "-Ctrl +alt+ K";
+} 
+
 
 
 

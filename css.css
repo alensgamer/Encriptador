@@ -51,8 +51,8 @@ textarea::placeholder{
     top: 5%;
     left: 5%;
     position: absolute;
-    width: 65vh;
-    height: 27vh;
+    width: 74%;
+    height: 87%;
     display: flex;
     word-break: break-all;
     word-wrap:break-word;
@@ -60,6 +60,7 @@ textarea::placeholder{
     font-size: 2vw;
     color: aliceblue;
     overflow-y: scroll;
+    font-size: auto;
 }
 
 #Atajos{
