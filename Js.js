@@ -14,14 +14,23 @@ function cons(si){
 function escribir2() {
     //valores Iniciales
     var valor = document.getElementById('entrada').value;
-     /* document.getElementById('Replica').innerHTML=' '+valor */
     
-    window.addEventListener("keypress",function(cachonda){
-        cons(cachonda.key)
-            mames = cachonda.key.value
-            cons(mames)
-    })
+    //codigo mio
+    var kore= valor.split("");
+    cons(kore);
+    var mames  = valor.split("")[valor.split("").length - 1];
+    cons(mames)
+    if  (mames == "e"){
+        
+        var sjsjj="enter"
+        mames = sjsjj;
+        cons(mames)
+        kore.push = mames
+        cons(kore)
+        document.getElementById('Replica').innerHTML=' '+kore
+    }
 
+       /* document.getElementById('Replica').innerHTML=' '+valor */ 
     
 } 
 /* var button = document.querySelector("button")
