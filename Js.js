@@ -11,24 +11,38 @@ function sal(se){
 function cons(si){
     console.log(si);
 }
+document.querySelector("textarea").onfocus;
 function escribir2() {
     //valores Iniciales
     var valor = document.getElementById('entrada').value;
     
     //codigo mio
     var kore= valor.split("");
-    cons(kore);
-    var mames  = valor.split("")[valor.split("").length - 1];
-    cons(mames)
-    if  (mames == "e"){
+    //Aqui solo me hace falta hacer que cambie el valor de lo que tiene 
+    //adentro ese array
+    /* for(con=0; con<=valor.split("").length; con++){
         
-        var sjsjj="enter"
-        mames = sjsjj;
-        cons(mames)
-        kore.push = mames
-        cons(kore)
-        document.getElementById('Replica').innerHTML=' '+kore
-    }
+        if(valor.split("")[con]=="e"){
+            cons(llenar.fill("enter"))
+            cons("esto no se debe imprimir")
+        }
+    } */
+
+    cons(kore)//imprime el numero de objetos que tengo en mi array y que tiene
+    var str = kore.join("");//convierte a kore a cadena de texto para que no se impriman las comas
+    cons(str)//imprime a kore convertida a texto
+    
+
+    document.getElementById('Replica').innerHTML=' '+str//esta es kore cuando ya fue completamente convertida y asi lo voy a pasar a la parte de encriptado para mostrarla al usuario
+    
+    
+    
+    //imprimir el ultimo valor del array
+    //var mames  = valor.split("")[valor.split("").length - 1];
+    
+
+    
+     
 
        /* document.getElementById('Replica').innerHTML=' '+valor */ 
     
@@ -56,7 +70,7 @@ uwu[zi].onmouseover=function(){
     uwu[zi].style.width = "75%";
     uwu[zi].style.fontSize = "0.9vw";
     uwu[zi].textContent = "Copiar Encriptado";
-} 
+}
 uwu[zi].onmouseleave=function(){
     cons("paso")
     uwu[zi].style.width = "auto";
