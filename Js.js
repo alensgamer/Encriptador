@@ -11,22 +11,29 @@ function sal(se){
 function cons(si){
     console.log(si);
 }
-document.querySelector("textarea").onfocus;
+document.querySelector("textarea").focus;
 function escribir2() {
     //valores Iniciales
     var valor = document.getElementById('entrada').value;
     
     //codigo mio
     var kore= valor.split("");
-    //Aqui solo me hace falta hacer que cambie el valor de lo que tiene 
-    //adentro ese array
-    /* for(con=0; con<=valor.split("").length; con++){
+    var ultimoarray = valor.split("")[(valor.split("").length)-1]
+    //este if me funciona solo si las e estan al final necsito hacer que funcione cuando continue avanzando el array
+    
+    //esto es lo que hice en la pc
+    if((ultimoarray)=="e"){
+        vorrado = kore.pop();
+        nuevo = kore    .push("nter");
         
-        if(valor.split("")[con]=="e"){
-            cons(llenar.fill("enter"))
-            cons("esto no se debe imprimir")
-        }
-    } */
+        cons("esto es en el array: " + kore );
+        
+    }
+
+    //lo que tengo que utililizar a continuacion es el metodo .map() y el siguiente codigo
+    
+    
+
 
     cons(kore)//imprime el numero de objetos que tengo en mi array y que tiene
     var str = kore.join("");//convierte a kore a cadena de texto para que no se impriman las comas
@@ -37,14 +44,13 @@ function escribir2() {
     
     
     
-    //imprimir el ultimo valor del array
-    //var mames  = valor.split("")[valor.split("").length - 1];
+
     
 
     
      
 
-       /* document.getElementById('Replica').innerHTML=' '+valor */ 
+    
     
 } 
 /* var button = document.querySelector("button")

@@ -1,6 +1,6 @@
 body{
     background-color: #333333;
-    overflow-y: hidden;
+    overflow-y: hidden;;
 }
 @font-face {
     font-family: 'Coda';
@@ -51,8 +51,8 @@ textarea::placeholder{
     top: 5%;
     left: 5%;
     position: absolute;
-    width: 74%;
-    height: 87%;
+    width: 65vh;
+    height: 27vh;
     display: flex;
     word-break: break-all;
     word-wrap:break-word;
@@ -60,7 +60,6 @@ textarea::placeholder{
     font-size: 2vw;
     color: aliceblue;
     overflow-y: scroll;
-    font-size: auto;
 }
 
 #Atajos{
