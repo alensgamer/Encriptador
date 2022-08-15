@@ -13,46 +13,49 @@ function cons(si){
 }
 document.querySelector("textarea").focus;
 function escribir2() {
-    //valores Iniciales
+//valores Iniciales
     var valor = document.getElementById('entrada').value;
     
-    //codigo mio
+///codigo mio
     var kore= valor.split("");
     var ultimoarray = valor.split("")[(valor.split("").length)-1]
-    //este if me funciona solo si las e estan al final necsito hacer que funcione cuando continue avanzando el array
+//este if me funciona solo si las e estan al final necsito hacer que funcione cuando continue avanzando el array
     
-    //esto es lo que hice en la pc
-    if((ultimoarray)=="e"){
+ /* if((ultimoarray)=="e"){
         vorrado = kore.pop();
         nuevo = kore    .push("nter");
         
         cons("esto es en el array: " + kore );
-        
-    }
+    } */
 
-    //lo que tengo que utililizar a continuacion es el metodo .map() y el siguiente codigo
-    
-    
+    kore2 = document.getElementById("encriptado").innerHTML=" "+kore.join("");
+// Este es el codigo que cambia los valores permanentemente, la verdad todavia no entiendo muy bien como funciona pero eso es en lo que me debo concentrar    
+    kore = kore.map( x => x === "e" ? x="enter" : x === "i" ? x="imes": x==="a" ? x="ai": x==="o" ? x="ober" : x==="u" ? x="ufat": x);
+    //esto debo pasarlo al modo desdencriptar
+    //kore = kore.map( x => x === "enter" ? x="e" : x === "imes" ? x="i": x==="ai" ? x="a": x==="ober" ? x="o" : x==="ufat" ? x="u": x);
 
 
     cons(kore)//imprime el numero de objetos que tengo en mi array y que tiene
     var str = kore.join("");//convierte a kore a cadena de texto para que no se impriman las comas
-    cons(str)//imprime a kore convertida a texto
+    cons( "str xd : " +str)//imprime a kore convertida a texto
     
-
-    document.getElementById('Replica').innerHTML=' '+str//esta es kore cuando ya fue completamente convertida y asi lo voy a pasar a la parte de encriptado para mostrarla al usuario
-    
-    
-    
-
-    
-
-    
-     
-
-    
+    document.getElementById('Replica').innerHTML=' '+str
+    //esta es kore cuando ya fue completamente convertida y asi lo voy a pasar a la parte de encriptado para mostrarla al usuario
     
 } 
+
+function fundesencriptar(){
+    cons("entraste a desencriptar")
+    valor2 = document.getElementById("encriptado").value
+    kores = valor2.split(" ");
+    kores = kores.join(" ");
+
+    str2 = kores.replace(/enter/gm, "e").replace(/imes/gm, "i");
+
+    cons(str2)
+
+    document.getElementById("Replica2").innerHTML=" "+str2
+}
 /* var button = document.querySelector("button")
 button.onclick = vamo;
 function vamo(){
@@ -123,13 +126,7 @@ uwu[carn].onmouseleave=function(){
     uwu[carn].textContent = "-Ctrl +alt+ K";
 } 
 
-
-
-
-
-
-
-
-
-
-
+//codigo para conseguir comandos de la pantalla
+window.addEventListener("keypress", function(teclas){
+    cons(teclas.keyCode)
+})

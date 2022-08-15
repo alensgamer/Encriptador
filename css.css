@@ -27,6 +27,11 @@ textarea{
     padding: 2%;
     
 }
+#encriptado{
+    background-color: black;
+    height: 10%;
+    top: 20%;
+}
 
 textarea::placeholder{
     top: 5%;
@@ -51,8 +56,8 @@ textarea::placeholder{
     top: 5%;
     left: 5%;
     position: absolute;
-    width: 65vh;
-    height: 27vh;
+    width: 74%;
+    height: 86%;
     display: flex;
     word-break: break-all;
     word-wrap:break-word;
@@ -112,4 +117,28 @@ textarea::placeholder{
     width: 23%;
     right: 10%;
     bottom: 10%;
+}
+#cont2{
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    background-image: url(css/Salida.png);
+    background-size: cover;
+    width: 45vw;
+    height: 16vw;
+    z-index: 5;
+}
+#Replica2{
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    width: 74%;
+    height: 86%;
+    display: flex;
+    word-break: break-all;
+    word-wrap:break-word;
+    font-family: Coda;
+    font-size: 2vw;
+    color: aliceblue;
+    overflow-y: scroll;
 }
