@@ -29,8 +29,9 @@ textarea{
 }
 #encriptado{
     background-color: black;
-    height: 10%;
-    top: 20%;
+    height: 69%;
+    top: 3%;
+    z-index: -1;
 }
 
 textarea::placeholder{
@@ -120,13 +121,13 @@ textarea::placeholder{
 }
 #cont2{
     position: absolute;
-    top: 30%;
+    top: 6%;
     right: 4%;
     background-image: url(css/Salida.png);
     background-size: cover;
     width: 45vw;
     height: 16vw;
-    z-index: 5;
+    z-index: -1;
 }
 #Replica2{
     top: 5%;
@@ -141,4 +142,16 @@ textarea::placeholder{
     font-size: 2vw;
     color: aliceblue;
     overflow-y: scroll;
+}
+#oculto{
+    opacity: 1%;
+}
+#copiado{
+    font-family: coda;
+    color: #125190;
+    font-size: 11vw;
+    position: absolute;
+    top: 14%;
+    right: 10%;
+    visibility: hidden;
 }
