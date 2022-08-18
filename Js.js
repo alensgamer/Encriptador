@@ -125,7 +125,7 @@ uwu[cami].onmouseleave=function(){
     cons("paso")
     uwu[cami].style.width = "auto";
     uwu[cami].style.fontSize = "1.4vw";
-    uwu[cami].textContent = "-Ctrl +alt+ M";
+    uwu[cami].textContent = "-Ctrl + <";
 } 
 
 uwu[cami].onclick = function(){
