@@ -149,9 +149,9 @@ textarea::placeholder{
 #copiado{
     font-family: coda;
     color: #125190;
-    font-size: 11vw;
+    font-size: 5vw;
     position: absolute;
-    top: 14%;
-    right: 10%;
+    top: 25%;
+    right: 28%;
     visibility: hidden;
 }
